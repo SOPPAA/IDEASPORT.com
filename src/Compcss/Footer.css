@@ -1,0 +1,26 @@
+footer {
+    Height: 40px;
+    width: 100%;
+    background: darkgreen;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    left: 0;
+   
+    & div {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    
+        & p {
+            color: #ffffff;
+            font-size: 15px;
+            display: flex;
+        justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+   
+}

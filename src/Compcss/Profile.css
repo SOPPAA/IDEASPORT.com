@@ -1,0 +1,22 @@
+.container {
+    overflow: hidden;
+    position: relative;
+}
+.content {
+    height: 500px;
+    background-color: aliceblue;
+    overflow: hidden;
+
+    & .container {
+        max-width: 1170px;
+        margin: 0 auto; 
+        }
+
+    & .content_info{   
+        display: flex;
+        justify-content: space-between;
+        margin-top: 115px;
+        
+        
+    }
+}
