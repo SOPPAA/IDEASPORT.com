@@ -5,27 +5,27 @@ import './App.css'
 
 
 // Components
-import Nav from './Components/Nav'
-import Profile from './Components/Profile'
-import Footer from './Components/Footer'
+
+import Home from './Components/Home'
+import Recommend from './Components/Recommend'
 import About from './Components/About'
 import Product from './Components/Product'
 import Contact from './Components/Contact'
-import Home from './Components/Home'
 
 function App() {
   
 
   return (
     <>
-      {/* <Nav />
-      <Profile /> */}
+     
+
+      <Home />
       <About />
       <Product />
+      {/* <Recommend /> */}
       <Contact />
-      <Home />
       
-      {/* <Image /> */}
+     
     </>
   )
 }

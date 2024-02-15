@@ -13,13 +13,13 @@ function Nav() {
           <div className="nav_menu">
             <ul>
               <li>
-                <Link to="/">Home/หน้าแรก</Link>
-              </li>
-              <li>
                 <Link to="/About">AboutUs/เกี่ยวกับเรา</Link>
               </li>
               <li>
                 <Link to="/Product">Produc/สินค้า</Link>
+              </li>
+              <li>
+                <Link to="/Recommend">สินค้าแนะนำ</Link>
               </li>
               <li>
                 <Link to="/Contact">Contact/ติดต่อ</Link>

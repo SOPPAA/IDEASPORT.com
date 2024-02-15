@@ -5,8 +5,7 @@ import "../Compcss/Product.css";
 // components
 import Nav from "./Nav";
 import Footer from "./Footer";
-import Productitem from "./Productitem";
-import Productitem2 from "./Productitem2";
+
 import ProductA from "../ProductItem/ProductA";
 import ProductB from "../ProductItem/ProductB";
 import ProductC from "../ProductItem/ProductC";
@@ -32,8 +31,12 @@ function Product() {
           </div>
         </div>
         {/* HEADER end */}
-        <div className="liner">
+
+        
+        <div className="head-liner">
           <h2>ตัวอย่างสินค้า:</h2>
+        </div>
+        <div className="liner">
           <h2>ตัวอย่างเสื้อคอกลม-คอวี:</h2>
         </div>
       
