@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from "react"; 
+import { Link } from 'react-router-dom';
 
+import Nav from '../Components/Nav';
 import '../Compcss/Product.css'
 
 function ProductA() {
@@ -8,11 +10,16 @@ function ProductA() {
 
   return (
     <>
-        
+       
         <div className="container">
+
+
+
+         <div className="liner">
+          <h2>ตัวอย่างเสื้อกลม-คอวี:</h2>
+        </div>
       <div className="product-content">
         {/* Product1 */}
-
         <div className="products-item">
           <div className="products-img">
             <img

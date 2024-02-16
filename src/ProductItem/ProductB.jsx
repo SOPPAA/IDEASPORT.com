@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Nav from '../Components/Nav';
 import '../Compcss/Product.css'
+
 
 function ProductB() {
     const [priceB, setPriceB] = useState("฿250"); // priceBราคาเสื้อคอจีน
@@ -8,7 +11,28 @@ function ProductB() {
   return (
    <>
        
+       <Nav/>
+
        <div className="container">
+        
+       <div className="con-head">
+          <div className="head">
+            <h1>PRODUCT</h1>
+          </div >
+        </div>
+        <div className="List">
+        <ul className="head-liner">
+            <li><Link to="/Product">ทั้งหมด</Link></li>
+            {/* <li><Link to="/ProductA">คอกลม-คอวี</Link></li> */}
+            <li><Link to="/ProductB">คอปก</Link></li>
+            <li><Link to="/ProductC">คอจีน</Link></li>
+            <li><Link to="/ProductM">มุสลีมะห์</Link></li>
+          </ul>
+        </div>
+
+       <div className="liner">
+        <h2>ตัวอย่างเสื้อคอปก:</h2>
+      </div>
       <div className="product-content">
         {/* Product1 */}
 
