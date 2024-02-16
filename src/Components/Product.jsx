@@ -35,15 +35,15 @@ function Product() {
           </div >
         </div>
         {/* HEADER end */}
-        <div className="List">
+        {/* <div className="List">
         <ul className="head-liner">
             <li><Link to="/Product">ทั้งหมด</Link></li>
-            {/* <li><Link to="/ProductA">คอกลม-คอวี</Link></li> */}
+            <li><Link to="/ProductA">คอกลม-คอวี</Link></li>
             <li><Link to="/ProductB">คอปก</Link></li>
             <li><Link to="/ProductC">คอจีน</Link></li>
             <li><Link to="/ProductM">มุสลีมะห์</Link></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* เสื้อคอกลม-คอวี */}
         <ProductA />

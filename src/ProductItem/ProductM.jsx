@@ -12,26 +12,8 @@ function ProductM() {
   return (
     <>
 
-      <Nav />
       <div className="container">
-         {/* HEADER star */}
-         <div className="con-head">
-          <div className="head">
-            <h1>PRODUCT</h1>
-          </div >
-        </div>
-        {/* HEADER end */}
-        
-        <div className="List">
-        <ul className="head-liner">
-            <li><Link to="/Product">ทั้งหมด</Link></li>
-            {/* <li><Link to="/ProductA">คอกลม-คอวี</Link></li> */}
-            <li><Link to="/ProductB">คอปก</Link></li>
-            <li><Link to="/ProductC">คอจีน</Link></li>
-            <li><Link to="/ProductM">มุสลีมะห์</Link></li>
-          </ul>
-        </div>
-       
+     
 
         <div className="liner">
           <h2>ตัวอย่างเสื้อคอวีมุสลีมะห์:</h2>
