@@ -1,6 +1,12 @@
-import React from "react";
+import { NavLink, Link } from "react-router-dom";
 import "../Compcss/Nav.css";
-import { Link } from "react-router-dom";
+
+const menu = [
+  { to: "/About", label: "About Us / เกี่ยวกับเรา" },
+  { to: "/Product", label: "Product / สินค้า" },
+  { to: "/Recommend", label: "สินค้าแนะนำ" },
+  { to: "/Contact", label: "Contact / ติดต่อ" },
+];
 
 function Nav() {
   return (
@@ -12,18 +18,11 @@ function Nav() {
           </div>
           <div className="nav_menu">
             <ul>
-              <li>
-                <Link to="/About">AboutUs/เกี่ยวกับเรา</Link>
-              </li>
-              <li>
-                <Link to="/Product">Produc/สินค้า</Link>
-              </li>
-              <li>
-                <Link to="/Recommend">สินค้าแนะนำ</Link>
-              </li>
-              <li>
-                <Link to="/Contact">Contact/ติดต่อ</Link>
-              </li>
+              {menu.map((m) => (
+                <li key={m.to}>
+                  <NavLink to={m.to}>{m.label}</NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -1,15 +1,16 @@
-import React from 'react'
-import '../Compcss/Footer.css'
+import shop from "../data/shop";
+import "../Compcss/Footer.css";
 
 function Footer() {
   return (
     <footer>
       <div>
-
-      <p>Copyright © SOPA 2024</p>
+        <p>
+          © {new Date().getFullYear()} {shop.name} {shop.city}
+        </p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

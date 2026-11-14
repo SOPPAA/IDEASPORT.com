@@ -1,8 +1,7 @@
-import React from "react";
-import "../Compcss/About.css";
-import '../index.css'
 import Nav from "./Nav";
 import Footer from "./Footer";
+import shop from "../data/shop";
+import "../Compcss/About.css";
 
 function About() {
   return (
@@ -12,13 +11,13 @@ function About() {
       <div className="container">
         <div className="con_about">
           <div className="con_content">
-              <h1>IDEA SPORT PATTANI</h1>
-              <h3>Sportswear Sewing Factory</h3>
-              <p>รับผลิตชุดพละ เสื้อกีฬาสี เสื้อทีมบอล เสื้อรุ่น <br />
-                เสื้อพนักงานOFFICE และเสื้อมุสลีมะห์ รับจบในที่เดียว</p>
+            <h1>
+              {shop.name} {shop.city}
+            </h1>
+            <h3>{shop.tagline}</h3>
+            <p>{shop.description}</p>
           </div>
-          <div className="con_logo">
-          </div>
+          <div className="con_logo" role="img" aria-label="โลโก้ร้าน"></div>
         </div>
       </div>
 

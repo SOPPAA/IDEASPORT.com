@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="เสื้อคอจีน สีม่วงน้ำเงิน">
+<rect width="500" height="500" fill="#e0e7ff"/>
+<circle cx="250" cy="250" r="230" fill="#ffffff" opacity=".35"/>
+<path d="M205 100 L120 140 L90 250 L140 265 L150 210 L150 400 L350 400 L350 210 L360 265 L410 250 L380 140 L295 100 Z" fill="#4f46e5" stroke="#312e81" stroke-width="8" stroke-linejoin="round"/>
+<path d="M215 108 L215 150 L285 150 L285 108" fill="#4f46e5" stroke="#312e81" stroke-width="10" stroke-linejoin="round"/><circle cx="250" cy="150" r="5" fill="#312e81"/><path d="M250 150 L250 215" stroke="#312e81" stroke-width="4"/>
+<text x="250" y="370" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#312e81">คอจีน</text>
+<text x="250" y="475" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#14532d" opacity=".8">IDEA SPORT · ภาพตัวอย่าง</text>
+</svg>

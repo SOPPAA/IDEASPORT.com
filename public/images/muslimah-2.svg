@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="เสื้อมุสลีมะห์ สีม่วง">
+<rect width="500" height="500" fill="#ede9fe"/>
+<circle cx="250" cy="250" r="230" fill="#ffffff" opacity=".35"/>
+<path d="M205 100 L120 140 L90 270 L135 285 L150 215 L150 430 L350 430 L350 215 L365 285 L410 270 L380 140 L295 100 Z" fill="#7c3aed" stroke="#4c1d95" stroke-width="8" stroke-linejoin="round"/>
+<path d="M205 110 L250 190 L295 110" fill="#ede9fe" stroke="#4c1d95" stroke-width="10" stroke-linejoin="round"/><path d="M130 300 Q250 330 370 300" stroke="#4c1d95" stroke-width="3" fill="none" opacity=".5"/>
+<text x="250" y="395" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#4c1d95">มุสลีมะห์</text>
+<text x="250" y="475" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#14532d" opacity=".8">IDEA SPORT · ภาพตัวอย่าง</text>
+</svg>

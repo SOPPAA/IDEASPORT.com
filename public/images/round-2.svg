@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="เสื้อคอกลม สีน้ำเงิน">
+<rect width="500" height="500" fill="#dbeafe"/>
+<circle cx="250" cy="250" r="230" fill="#ffffff" opacity=".35"/>
+<path d="M205 100 L120 140 L90 250 L140 265 L150 210 L150 400 L350 400 L350 210 L360 265 L410 250 L380 140 L295 100 Z" fill="#2563eb" stroke="#1e3a8a" stroke-width="8" stroke-linejoin="round"/>
+<path d="M205 110 Q250 165 295 110" fill="#dbeafe" stroke="#1e3a8a" stroke-width="10" stroke-linecap="round"/>
+<text x="250" y="370" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#1e3a8a">คอกลม</text>
+<text x="250" y="475" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#14532d" opacity=".8">IDEA SPORT · ภาพตัวอย่าง</text>
+</svg>

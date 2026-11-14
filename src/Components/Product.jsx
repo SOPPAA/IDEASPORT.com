@@ -1,60 +1,51 @@
-import React from "react";
-import { useState } from "react"; 
-import { Link } from "react-router-dom";
-
-// style
-import "../Compcss/Product.css";
-
-
-// components
+import { Link, useParams } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
-// Product item
-import ProductA from "../ProductItem/ProductA";
-import ProductB from "../ProductItem/ProductB";
-import ProductC from "../ProductItem/ProductC";
-import ProductM from "../ProductItem/ProductM";
+import ProductSection from "./ProductSection";
+import { categories, getCategory } from "../data/products";
+import "../Compcss/Product.css";
 
-// img
-import Image from "../img/1.jpg";
-
-
-
-
+// /Product          -> ทุกหมวด
+// /Product/:slug    -> เฉพาะหมวดนั้น
 function Product() {
+  const { slug } = useParams();
+  const current = slug ? getCategory(slug) : null;
+  const shown = current ? [current] : categories;
 
   return (
     <>
       <Nav />
-      
+
       <div className="container">
-        {/* HEADER star */}
         <div className="con-head">
           <div className="head">
-            <h1>PRODUCT</h1>
-          </div >
+            <h1>{current ? current.title : "PRODUCT / สินค้า"}</h1>
+          </div>
         </div>
-        {/* HEADER end */}
-        {/* <div className="List">
-        <ul className="head-liner">
-            <li><Link to="/Product">ทั้งหมด</Link></li>
-            <li><Link to="/ProductA">คอกลม-คอวี</Link></li>
-            <li><Link to="/ProductB">คอปก</Link></li>
-            <li><Link to="/ProductC">คอจีน</Link></li>
-            <li><Link to="/ProductM">มุสลีมะห์</Link></li>
-          </ul>
-        </div> */}
 
-        {/* เสื้อคอกลม-คอวี */}
-        <ProductA />
-        {/* เสื้อคอจีน */}
-        <ProductB />
-        {/* เสื้อคอปก */}
-        <ProductC />
-        {/* เสื้อคอวีมุสลีมะห์ */}
-        <ProductM />
-        {/* เสื้อโรงเรียนชุดพละ */}
+        <ul className="head-liner">
+          <li>
+            <Link to="/Product">ทั้งหมด</Link>
+          </li>
+          {categories.map((c) => (
+            <li key={c.slug}>
+              <Link to={`/Product/${c.slug}`}>{c.title}</Link>
+            </li>
+          ))}
+        </ul>
+
+        {slug && !current && (
+          <p className="not-found">
+            ไม่พบหมวดสินค้านี้ <Link to="/Product">กลับไปดูสินค้าทั้งหมด</Link>
+          </p>
+        )}
+
+        {(!slug || current) &&
+          shown.map((c) => (
+            <ProductSection key={c.slug} category={c} showLink={!current} />
+          ))}
       </div>
+
       <Footer />
     </>
   );

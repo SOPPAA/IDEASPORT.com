@@ -44,3 +44,7 @@ nav {
         outline: 1px solid red;
     } */
 
+
+nav .nav_menu a.active { border-bottom: 2px solid #fff; font-weight: 700; }
+nav .container { padding: 0 1rem; flex-wrap: wrap; }
+@media (max-width: 760px) { nav .container { height: auto; padding: 0.5rem 1rem; } nav ul { flex-wrap: wrap; } }

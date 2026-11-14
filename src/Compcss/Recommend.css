@@ -1,0 +1,17 @@
+.rec-intro { text-align: center; margin: 1rem 0; color: #166534; font-size: 18px; }
+.rec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem 0.5rem 3rem;
+}
+.rec-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.rec-item:hover { box-shadow: 0 0 5px 5px rgba(0, 255, 42, 0.5); }
+.rec-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+.rec-item h3 { padding: 0.5rem 0.75rem 0; }
+.rec-item p { padding: 0.25rem 0.75rem 0.75rem; color: #4b5563; font-size: 14px; }
